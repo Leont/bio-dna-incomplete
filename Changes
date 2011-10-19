@@ -1,6 +1,8 @@
 Revision history for Bio-DNA-Incomplete
 
 {{$NEXT}}
+
+0.002     2011-10-19 16:00:04 Europe/Amsterdam
           Added all_possibilities
           Improved case-insensitivity
 
