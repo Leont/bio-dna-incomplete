@@ -42,8 +42,8 @@ sub pattern_to_regex {
 
 sub match_pattern {
 	my ($pattern, @args) = @_;
-    my $regex = pattern_to_regex($pattern);
-    return grep { $_ =~ /\A $regex \z/xms } @args;
+	my $regex = pattern_to_regex($pattern);
+	return grep { $_ =~ /\A $regex \z/xms } @args;
 }
 
 sub _all_possibilities {
@@ -51,7 +51,7 @@ sub _all_possibilities {
 	if (@rest) {
 		my @ret;
 		my $pretail = _all_possibilities(@rest);
-		for my $head (@{$bases_for{$current}}) {
+		for my $head (length $current == 1 ? @{ $bases_for{$current} } : $current) {
 			for my $tail (@{$pretail}) {
 				push @ret, $head.$tail;
 			}
@@ -59,13 +59,13 @@ sub _all_possibilities {
 		return \@ret;
 	}
 	else {
-		return $bases_for{$current};
+		return $bases_for{$current} || [ $current ];
 	}
 }
 
 sub all_possibilities {
-    my $pattern = uc shift;
-	my @bases = split //, $pattern;
+	my $pattern = uc shift;
+	my @bases = $pattern =~ m/[ACTG]+|[^ACGT]/g;
 	return @{ _all_possibilities(@bases) };
 }
 

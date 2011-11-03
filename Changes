@@ -1,6 +1,7 @@
 Revision history for Bio-DNA-Incomplete
 
 {{$NEXT}}
+          Optimize all_possibilities
           Added tests for all_possibilities
           Added some explanation of what the module does
 
