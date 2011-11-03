@@ -1,6 +1,7 @@
 Revision history for Bio-DNA-Incomplete
 
 {{$NEXT}}
+          Added tests for all_possibilities
           Added some explanation of what the module does
 
 0.002     2011-10-19 16:00:04 Europe/Amsterdam
