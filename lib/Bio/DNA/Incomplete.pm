@@ -75,6 +75,10 @@ sub all_possibilities {
 
 __END__
 
+=head1 DESCRIPTION
+
+Sometimes DNA patterns are given with incomplete nucleotides that match more than one real nucleotide. This module helps you deal with them.
+
 =func match_pattern($pattern, @things_to_test)
 
 Returns the list of sequences that match C<$pattern>.
@@ -94,6 +98,8 @@ Returns a list of all possible sequences that can match the pattern.
 =head1 SEE ALSO
 
 =over 1
+
+=item L<Nomenclature for Incompletely Specified Bases in Nucleic Acid Sequences|http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
 
 =item * Text::Glob
 
