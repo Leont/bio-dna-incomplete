@@ -1,6 +1,8 @@
 Revision history for Bio-DNA-Incomplete
 
 {{$NEXT}}
+
+0.003     2011-11-03 16:29:57 Europe/Amsterdam
           Optimize all_possibilities
           Added tests for all_possibilities
           Added some explanation of what the module does
