@@ -74,8 +74,6 @@ sub all_possibilities {
 
 #ABSTRACT: Match incompletely specified bases in nucleic acid sequences
 
-__END__
-
 =head1 DESCRIPTION
 
 Sometimes DNA patterns are given with incomplete nucleotides that match more than one real nucleotide. This module helps you deal with them.
@@ -98,9 +96,9 @@ Returns a list of all possible sequences that can match the pattern.
 
 =head1 SEE ALSO
 
-=over 1
+=over 4
 
-=item L<Nomenclature for Incompletely Specified Bases in Nucleic Acid Sequences|http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
+=item * L<Nomenclature for Incompletely Specified Bases in Nucleic Acid Sequences|http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html>
 
 =item * Text::Glob
 
