@@ -3,7 +3,7 @@ use strict;
 use warnings;
 
 use Carp 'croak';
-use Sub::Exporter -setup => { exports => [qw/pattern_to_regex pattern_to_regex_string match_pattern all_possibilities/], groups => { default => [qw/pattern_to_regex pattern_to_regex_string match_pattern all_possibilities/]} };
+use Sub::Exporter::Progressive -setup => { exports => [qw/pattern_to_regex pattern_to_regex_string match_pattern all_possibilities/], groups => { default => [qw/pattern_to_regex pattern_to_regex_string match_pattern all_possibilities/]} };
 
 my %simple = map { ( $_ => $_ ) } qw/A C G T/;
 

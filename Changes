@@ -1,6 +1,7 @@
 Revision history for Bio-DNA-Incomplete
 
 {{$NEXT}}
+          Switch to Sub::Exporter::Progressive
 
 0.003     2011-11-03 16:29:57 Europe/Amsterdam
           Optimize all_possibilities
