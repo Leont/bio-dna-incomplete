@@ -51,6 +51,7 @@ sub _all_possibilities {
 	if (@rest) {
 		my @ret;
 		my $pretail = _all_possibilities(@rest);
+		# Chunks longer than 1 are always /[ACTG]+/, so always match themselves
 		for my $head (length $current == 1 ? @{ $bases_for{$current} } : $current) {
 			for my $tail (@{$pretail}) {
 				push @ret, $head.$tail;
